@@ -1,0 +1,248 @@
+* {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f2f4f8;
+      color: #333;
+      line-height: 1.6;
+      transition: background 0.4s, color 0.4s;
+    }
+
+    header {
+      background: #007acc;
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 300px;
+      margin-top: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    #theme-toggle {
+      margin-top: 1rem;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      background: #fff;
+      color: #007acc;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #007acc;
+    }
+
+    .project {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: #007acc;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #005a9e;
+    }
+
+    .contact-icons i {
+      font-size: 1.8rem;
+      margin: 0 10px;
+      color: #007acc;
+      transition: transform 0.3s;
+    }
+
+    .contact-icons i:hover {
+      transform: scale(1.2);
+    }
+
+    .btn-contact {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: #007acc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn-contact:hover {
+      background: #005a9e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+
+    /* MODE SOMBRE */
+    body.dark {
+      background-color: #1e1e1e;
+      color: #ddd;
+    }
+
+    body.dark header {
+      background: #111;
+      color: #fff;
+    }
+
+    body.dark .project {
+      background: #2a2a2a;
+    }
+
+    body.dark footer {
+      background: #111;
+      color: #aaa;
+    }
+
+    body.dark a {
+      color: #64b5f6;
+    }
+
+    body.dark .btn-contact {
+      background: #64b5f6;
+      color: #111;
+    }
+
+    body.dark .btn-contact:hover {
+      background: #428ecf;
+    }
+
+    body.dark #theme-toggle {
+      background: #333;
+      color: #64b5f6;
+    }
+
+    /* Animations fade-in */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+/* Section Projets */
+#projects .project {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.8rem;
+  margin-bottom: 1.6rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+#projects .project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Section Compétences */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skills-list li {
+  background: #007acc;
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,122,204,0.5);
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+.skills-list li:hover {
+  background-color: #005a9e;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .skills-list {
+    justify-content: center;
+  }
+  #projects .project {
+    padding: 1.3rem;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation-name: fadeInUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-play-state: paused; /* l’animation est en pause au départ */
+}
