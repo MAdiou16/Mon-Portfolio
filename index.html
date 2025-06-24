@@ -7,6 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
 </head>
 <body>
 
@@ -15,30 +21,30 @@
     <p>Développeur Web Junior</p>
     <button id="theme-toggle">🌙 Mode sombre</button>
     <img src="./images/file_000000008c5461f8a37541772739a0ff.png" alt="Illustration développeur">
+    <nav>
+      <ul type="none">
+        <li><a href="#about">À Propos</a></li>
+        <li><a href="#projects">Mes Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2 class="section-title">À propos</h2>
     <p>Passionné par le développement web, j’ai suivi une formation complète chez GoMyCode où j’ai acquis des compétences solides en HTML, CSS, JavaScript et React. J’aime créer des interfaces propres, réactives et accessibles. J’ai récemment lancé une boutique Shopify appelée <strong>AfroTek Accessoires</strong>, qui reflète mon goût pour le web design et l’entrepreneuriat numérique.</p>
 
     <a class="btn-contact" href="CV_Diawara_real.docx" download>Télécharger mon CV 📄</a>
   </section>
 
-  <section>
-    <h2 class="section-title">Projets</h2>
-    <div class="project">
-      <h3>Exercices de formation GoMyCode</h3>
-      <p>Petits projets pratiques réalisés pendant ma formation, couvrant les bases du front-end : mise en page, responsive design, composants, etc.</p>
-    </div>
-    <div class="project">
-      <h3>AfroTek Accessoires (Shopify)</h3>
-      <p>Boutique en ligne de vêtements et accessoires en laine tricotée. Conception, configuration et mise en ligne sur Shopify.</p>
-    </div>
-  </section>
-
   <section id="projects">
   <h2 class="section-title">Mes Projets</h2>
 
+  <div class="project fade-in">
+  <h3>Exercices de formation GoMyCode</h3>
+      <p>Petits projets pratiques réalisés pendant ma formation, couvrant les bases du front-end : mise en page, responsive design, composants, etc.</p>
+ </div>
   <div class="project fade-in">
     <h3>Site Portfolio Personnel</h3>
     <p>Un portfolio responsive pour présenter mon profil, compétences, projets et contact.</p>
@@ -74,13 +80,6 @@
 />
 </div>
 
-  <div class="project fade-in" style="animation-delay: 0.4s;">
-    <h3>Exercices GoMyCode</h3>
-    <p>Projets pratiques réalisés durant ma formation, incluant responsive design et composants dynamiques.</p>
-    <p><strong>Technologies :</strong> HTML, CSS, JavaScript, Bootstrap</p>
-  </div>
-</section>
-
 <section id="skills">
   <h2 class="section-title">Compétences</h2>
   <ul class="skills-list fade-in" style="animation-delay: 0.6s;">
@@ -96,7 +95,10 @@
     <div class="contact-icons">
       <a href="mailto:madioudiawara324@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
       <a href="https://github.com/MAdiou16" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="contact.html" title="Formulaire"><i class="fas fa-paper-plane"></i></a>
+      <a href="https://wa.me/221785133076" target="_blank" title="WhatsApp">
+  <i class="fab fa-whatsapp" style="font-size: 1.8rem;"></i>
+</a>
+
     </div>
 
     <a class="btn-contact" href="contact.html">📨 Me contacter via formulaire</a>
